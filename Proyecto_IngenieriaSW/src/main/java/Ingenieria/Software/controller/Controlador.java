@@ -39,11 +39,10 @@ public class Controlador {
 								  @RequestParam(name = "segundoApellido") String segundoApellido,
 								  @RequestParam(name = "correoElectronico") String correoElectronico,
 								  @RequestParam(name = "direccion") String direccion,
-								  @RequestParam(name = "rol") String rol,
 								  @RequestParam(name = "idDepartamento") int idDepartamento){
 		/*int id, String primerNombre, String segundoNombre, String primerApellido, String segundoApellido,
 			String correoElectronico, String direccion, String rol, int idDepartamento*/
-		Usuario usuario= new Usuario(primerNombre,segundoNombre,primerApellido,segundoApellido,correoElectronico,direccion,rol,idDepartamento);
+		Usuario usuario= new Usuario(primerNombre,segundoNombre,primerApellido,segundoApellido,correoElectronico,direccion,idDepartamento);
 		this.serviceUsuario.crear(usuario);
 		return "index";
 	}

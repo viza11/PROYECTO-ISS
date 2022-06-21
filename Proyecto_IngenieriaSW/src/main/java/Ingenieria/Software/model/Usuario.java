@@ -25,7 +25,6 @@ public class Usuario {
 	private String segundoApellido;
 	private String correoElectronico;
 	private String direccion;
-	private String rol;
 	private int idDepartamento;
 	
 	
@@ -41,7 +40,7 @@ public class Usuario {
 	//Constructor
 	
 	public Usuario(String primerNombre, String segundoNombre, String primerApellido, String segundoApellido,
-			String correoElectronico, String direccion, String rol, int idDepartamento) {
+			String correoElectronico, String direccion, int idDepartamento) {
 		super();
 		this.primerNombre = primerNombre;
 		this.segundoNombre = segundoNombre;
@@ -49,7 +48,6 @@ public class Usuario {
 		this.segundoApellido = segundoApellido;
 		this.correoElectronico = correoElectronico;
 		this.direccion = direccion;
-		this.rol = rol;
 		this.idDepartamento = idDepartamento;
 		
 		
@@ -93,12 +91,7 @@ public class Usuario {
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
 	}
-	public String getRol() {
-		return rol;
-	}
-	public void setRol(String rol) {
-		this.rol = rol;
-	}
+
 	public int getIdDepartamento() {
 		return idDepartamento;
 	}
