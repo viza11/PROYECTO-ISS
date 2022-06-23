@@ -24,8 +24,11 @@ public class Usuario {
 	private String primerApellido;
 	private String segundoApellido;
 	private String correoElectronico;
-	private String direccion;
+	private String contrasenia;
 	private int idDepartamento;
+	private int telefono;
+	private String direccion;
+	
 	
 	
 	@ManyToOne(fetch = FetchType.LAZY)
@@ -39,25 +42,46 @@ public class Usuario {
 	
 	//Constructor
 	
-	public Usuario(String primerNombre, String segundoNombre, String primerApellido, String segundoApellido,
-			String correoElectronico, String direccion, int idDepartamento) {
+	
+
+	public String getContrasenia() {
+		return contrasenia;
+	}
+
+	public void setContrasenia(String contrasenia) {
+		this.contrasenia = contrasenia;
+	}
+
+	public int getTelefono() {
+		return telefono;
+	}
+
+	public void setTelefono(int telefono) {
+		this.telefono = telefono;
+	}
+
+	public void setIdDepartamento(int idDepartamento) {
+		this.idDepartamento = idDepartamento;
+	}
+
+	public String getPrimerNombre() {
+		return primerNombre;
+	}
+	public Usuario( String primerNombre, String segundoNombre, String primerApellido,
+			String segundoApellido, String correoElectronico, String contrasenia, int idDepartamento, int telefono,
+			String direccion) {
 		super();
 		this.primerNombre = primerNombre;
 		this.segundoNombre = segundoNombre;
 		this.primerApellido = primerApellido;
 		this.segundoApellido = segundoApellido;
 		this.correoElectronico = correoElectronico;
-		this.direccion = direccion;
+		this.contrasenia = contrasenia;
 		this.idDepartamento = idDepartamento;
-		
-		
-		
-		//Getters and Setters
+		this.telefono = telefono;
+		this.direccion = direccion;
 	}
 
-	public String getPrimerNombre() {
-		return primerNombre;
-	}
 	public void setPrimerNombre(String primerNombre) {
 		this.primerNombre = primerNombre;
 	}
