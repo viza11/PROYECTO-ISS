@@ -40,7 +40,7 @@ public class Controlador {
 		return "login";
 	}
 	
-	@RequestMapping(value= "/usuarios/crearUsuarios",method=RequestMethod.POST)
+	@RequestMapping(value= "/usuarios/iniciarSesion",method=RequestMethod.POST)
 	public String crearUsuario(
 								  @RequestParam(name = "primerNombre") String primerNombre,
 								  @RequestParam(name = "segundoNombre") String segundoNombre, 

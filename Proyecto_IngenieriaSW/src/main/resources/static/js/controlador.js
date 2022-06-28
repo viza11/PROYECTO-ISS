@@ -113,3 +113,5 @@ function verificar2(forma){
 	}
 	
 }
+
+
